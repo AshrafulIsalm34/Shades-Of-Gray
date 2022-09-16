@@ -1,0 +1,908 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*typography start*/
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  font-family: sans-serif,"Arial";
+}
+ul,ol{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
+.clear{
+  overflow: hidden;
+}
+.full_wrapper{
+  width: 100%;
+    overflow: hidden;
+}
+.wrapper{
+  width: 1140px;
+  height: auto;
+  margin: 0 auto
+}
+/*typography finish*/
+/*header section start*/
+.header_bg{
+    background: url(../img/header_bg.jpg)no-repeat;
+    background-size: contain;
+    background-repeat: round;
+}
+.header_section{
+    height: 500px;
+}
+.header_top{
+    text-align: right;
+    padding-top: 40px;
+}
+.header_top a{
+    color: #372c3c;
+    font-size: 30px;
+}
+.three_dot_icon{
+
+}
+.header_bottom{
+    margin-top: 8%;
+}
+.header_bottom h2{
+    font-size: 40px;
+    font-family: GothamRounded Book;
+    color: #a1a9b0;
+    text-align: center;
+}
+.header_bottom p{
+    font-size: 15px;
+    color: #8c9398;
+    font-family: GothamRounded Italic;
+    text-align: center;
+}
+.header_bottom button{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: GothamRounded Medium;
+    padding: 10px;
+    background: #309383;
+    border: 1px solid #887779;
+    border-radius: 5px;
+    margin: 5% 44%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.header_bottom button:hover{
+    background: #3DC9B3;
+}
+/*header section finish*/
+/*portfolio section start*/
+.portfolio_bg{
+    background:#F3F5F8;
+    height: 305px;
+}
+.fortfolio_section{
+    padding: 7% 0%;
+}
+.portfolio{
+
+}
+.portfolio h2,.service_top h2,.skill_top h2,.same_vedio h2,.team_member_top h2,.same_team_member h2,.footer_top_up h2{
+    font-family: GothamRounded Medium;
+    font-size: 15px;
+    color: #353535;
+    text-align: center;
+}
+.portfolio ul,.service_top ul,.team_member_top ul ,.footer_top_up ul{
+    text-align: center;
+}
+.portfolio ul li,.service_top ul li,.team_member_top ul li,.footer_top_up ul li{
+    display: inline-block;
+    margin: 0px 20px; 
+}
+.portfolio ul li img{
+     
+}
+.same_portfolio{
+    width: 100%;
+}
+.same_portfolio_icon{
+    width: 90%;
+}
+.portfolio p,.same_service p,.skill_top p,.same_vedio p,.same_team_member p{
+    font-family: GothamRounded Medium;
+    font-size: 14px;
+    color: #8c9398;
+    text-align: center;
+
+}
+/*portfolio section finish*/
+
+/*service section start*/
+.service_bg{
+
+}
+.service_section{
+    padding: 7% 0px;
+    display: inline-block;
+}
+.service_bottom{
+    margin-top: 4%;
+}
+.same_service{
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+}
+.same_service:last-child{
+    margin-right: 0px;
+}
+.same_service_top{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+    background: #3DC9B3;
+}
+.same_service_icon{
+    transform: translate(70%, 100%);
+    font-size: 2.2em;
+    color: #ffffff;
+}
+.same_service h3{
+    font-family: GothamRounded Medium;
+    font-size: 15px;
+    color: #353535;
+    text-align: center;
+    margin-top: 12%;
+}
+.same_service img,.same_vedio_img2{
+    width: 25px;
+    margin-left: 42%;
+}
+.same_service p{
+
+}
+
+/*service section finish*/
+
+/*skill section start*/
+.skill_bg{
+    background:url(../img/iphon.jpg)no-repeat;
+    height: 600px;
+    width: 52%;
+    background-size: cover;
+
+}
+.skill_section{
+    margin-left: 69%;
+    display: inline-block;
+}
+.skill_top{
+    width: 450px;
+    padding: 15% 0%;
+}
+.skill_top ul{
+    text-align: center;
+}
+.skill_top ul li{
+    display: inline;
+}
+.skill_top p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.skill_top ul li img{
+
+}
+.same_skill{
+    width: 42%;
+}
+.same_skill_icon{
+    width: 3%;
+    margin: 0px 20px;
+}
+.skill_bottom{
+
+}
+.skill_bottom ul{
+    margin-left: 50%;
+}
+.skill_bottom ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 10px;
+    transition: all 1.2s ease;
+}
+.skill_bottom ul li:hover,.active{
+    background:black;
+}
+
+/*skill section finish*/
+
+/*banner2 section start*/
+.banner_bg{
+    background:url(../img/banner_icon.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner_bg:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(68,68,68,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+.banner_section{
+    height: 300px;
+}
+.banner_text{
+    padding-top: 75px;
+}
+.banner_text h2{
+    font-size: 40px;
+    font-family: GothamRounded Book;
+    color: #ffffff;
+    text-align: center;
+}
+.banner_text h3{
+    font-size: 25px;
+    font-family: GothamRounded Book;
+    color: #ffffff;
+    text-align: center;
+}
+.banner_text li{
+    list-style-type: none;
+    display: inline-block;
+}
+.banner_text_icon{
+    width: 5%;
+    background: #3DC9B3;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 40px;
+}
+.banner_img{
+
+}
+
+/*banner2 section finish*/
+
+/*vedio section start*/
+.video_bg{
+
+}
+.vedio_section{
+    padding: 100px 0px;
+    display: inline-block;
+}
+.vedio_content_top{
+    height: 345px;
+}
+.same_vedio{
+    width: 30%;
+    margin-right: 5%;
+}
+.same_vedio:last-child{
+    margin-right: 0px !important;
+}
+.same_vedio ul{
+    position: absolute;
+    z-index: 10;
+    transform: translate(105%, 155%);
+    text-align: center;
+}
+.same_vedio ul li{
+    
+}
+.same_vedio ul li a{
+    color: #000;
+}
+.same_vedio_img1_opacty{
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+/*.same_vedio_img1_opacty:before{
+   content: '';
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.6);
+   position: absolute;
+   top: 0;
+   left: 0;
+}*/
+.same_vedio_img1{
+    width: 100%
+    height:auto;
+    
+}
+.vedio_content_bottom{
+    margin-top: 60px;
+}
+.vedio_bottom ul{
+    margin-left: 50%;
+}
+.vedio_bottom ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 10px;
+    transition: all 1.2s ease;
+}
+.vedio_bottom ul li:hover,.active{
+    background:black;
+}
+/*vedio section finish*/
+/*passion section start*/
+.passion_bg{
+    background: #242830;
+}
+.passion_section{
+    padding: 60px 0px;
+    text-align: center;
+}
+.passion_section a{
+    padding: 15px;
+    border: 1px solid #84868B;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    font-family:  GothamRounded Medium;
+}
+/*passion section finish*/
+
+/*team_member_section start*/
+.team_member_bg{
+
+}
+.team_member_section{
+    padding: 60px 0px;
+    display: inline-block;
+}
+.team_member_top{
+
+}
+
+.team_member_bottom{
+    padding: 60px 0px;
+    display: inline-block;
+}
+.same_team_member{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.same_team_member:last-child{
+    margin-right: 0px;
+}
+.same_team_member p{
+
+}
+.same_team_member_img{
+    width: 45%;
+    margin-left: 25%;
+}
+.social_icon{
+    padding: 35px 0px;
+}
+.social_icon ul{
+    margin-left: 25%;
+}
+.social_icon ul li{
+    float: left;
+    margin-right: 20px;
+    border-radius: 115%;
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    transition: all 1s ease;
+}
+.social_icon ul li:hover{
+    background: #3DC9B3;
+}
+.social_icon ul li a{
+    
+}
+.same_social_icon{
+    transform: translate(12px, 10px);
+    color: white;
+}
+/*team_member_section finish*/
+/*banner2 section start*/
+.banner2_bg{
+    background: url(../img/banner2_bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner2_bg:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(68,68,68,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.baner2_section{
+    padding: 100px 0px;
+}
+.banner2_top{
+    text-align: center;
+}
+.banner2_top img{
+    width: 25px;
+}
+.banner2_top h2,.banner2_top button{
+    color: #ffffff;
+    font-size: 15px;
+    font-family:  GothamRounded Medium;
+}
+.input_field{
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #818387;
+    border-radius: 5px;   
+    cursor: pointer;
+    color: white;
+}
+.banner2_top button{
+    padding: 12px 15px;
+    border: none;
+    background: #3DC9B3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner2_bottom{
+    transform: translate(50%, 245%);
+}
+.banner2_bottom li{
+    list-style-type: none;
+}
+.banner2_bottom img{
+    width: 30px;
+    transform: translate(10px, 10px);
+}
+.banner2_bottom_icon2{
+    width: 50px;
+    height: 50px;
+    background: #3DC9B3;
+    border-radius: 50%;
+}
+/*banner2 section finish*/
+
+/*footer top section start*/
+.footer_top_bg{
+    background: #F3F5F8;
+}
+.footer_top_section{
+    padding: 100px 0px;
+    overflow: hidden;
+}
+.footer_top_up{
+
+}
+.footer_top_down{
+    padding-top: 90px;
+    overflow: hidden;
+}
+.same_footer_text{
+    width: 30%;
+    margin-right: 5%;
+    text-align: center;
+    background: #ffffff;
+    padding: 30px 0px;
+    float: left;
+}
+.same_footer_text:last-child{
+    margin-right: 0px;
+}
+.same_footer_text img{
+    width: 15px;
+}
+.same_footer_text h2{
+    color: #3dc9b3;
+    font-size: 14px;
+    font-family: GothamRounded Medium;
+}
+.same_footer_text h3{
+    color: #8c9398;
+    font-size: 14px;
+    font-family: GothamRounded Medium;
+}
+.footer_social_icon{
+    padding-top: 90px;
+    margin-left: 25%;
+}
+/*footer top section finish*/
+
+/* main footer section start*/
+.main_footer_bg{
+    background: #242830;
+}
+.main_footer_section{
+    padding: 40px 0px;
+    overflow: hidden;
+}
+.main_footer_left{
+    width: 50%;
+}
+.main_footer_right{
+    width: 50%;
+    text-align: right;
+}
+.main_footer_left p,.main_footer_right p{
+    color: white;
+    font-family: GothamRounded Book;
+    font-size: 18px;
+}
+
+/* main footer section finish*/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+
+
+
+/*  Less Framework 4 with 16/24 type presets
+  http://lessframework.com
+  by Joni Korpi
+  License: http://opensource.org/licenses/mit-license.php */
+
+
+
+/*  Resets
+  ------  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*  Typography presets
+  ------------------  */
+
+.gigantic {
+  font-size: 110px;
+  line-height: 120px;
+  letter-spacing: -2px;
+}
+
+.huge, h1 {
+  font-size: 68px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.large, h2 {
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.big, h4 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+body {
+  font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+

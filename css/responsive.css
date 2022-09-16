@@ -1,0 +1,402 @@
+/*
+===========Default Layout=================
+*/
+
+.wrapper{
+  width: 1140px;
+  height: auto;
+  margin: 0 auto
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+/*
+=======mini laptop layout:992px;==============
+*/
+@media only screen and (min-width:992px) and (max-width: 1139px){
+	.wrapper{
+		width: 98%;
+	}
+	.header_bottom button{
+		margin: 5% 43%;
+	}
+	.skill_bg {
+	    height: 444px;
+	}
+	.skill_section {
+	    margin-left: 104%;
+	}
+	.skill_top {
+	    padding: 10% 0%;
+	}
+}
+/*
+=======Tablet layout:768px;==============
+*/
+@media only screen and (min-width:768px) and (max-width: 991px){
+	.wrapper{
+		width: 98%;
+	}
+	.header_bottom button{
+		margin: 5% 42%;
+	}
+	.skill_bg {
+	    height: 342px;
+	}
+	.skill_section {
+	    margin-left: 104%;
+	}
+	.same_skill {
+	    width: 40%;
+	}
+	.skill_top {
+	    width: 345px;
+	    padding: 0% 0%;
+	}
+	.skill_top p {
+	    margin-bottom: 5px;
+	}
+	.same_service h3 {
+	    font-size: 14px;
+	}
+	.banner_bg,.banner2_bg {
+	    background-size: contain;
+	    background-repeat: round;
+	}
+	.banner_section {
+	    height: 215px;
+	}
+	.banner_text {
+	    padding-top: 30px;
+	}
+	.same_vedio ul {
+	    transform: translate(70%, 115%);
+	}
+	.social_icon ul li {
+	    width: 30px;
+	    height: 30px;
+	}
+	.same_social_icon {
+	    transform: translate(7px, 3px);
+	}
+	.baner2_section {
+	    padding: 90px 0px;
+	    height: 125px;
+	}
+	.banner2_bottom {
+	    transform: translate(50%, 145%);
+	}
+	.main_footer_left {
+	    width: 35%;
+	}
+	.main_footer_right {
+	    width: 65%;
+	}
+}
+/*
+=======Wide Mobile layout:480px;==============
+*/
+@media only screen and (min-width:480px) and (max-width: 767px){
+	.wrapper{
+		width: 98%;
+	}
+	.header_section {
+	    height: 350px;
+	}
+	.header_bottom {
+	    margin-top: 0%;
+	}
+	.header_bottom button{
+		margin: 5% 37%;
+	}
+	.portfolio ul li, .service_top ul li, .team_member_top ul li, .footer_top_up ul li {
+	    display: inline;
+	    margin: 0px 0px;
+	}
+	.same_portfolio {
+	    width: 40%;
+	}
+	.skill_bg {
+	    height: 342px;
+	    width: 100%;
+	}
+	.same_portfolio_icon {
+	    width: 2%;
+	    margin: 0px 20px;
+	}
+	.skill_section {
+	    margin-left: 0%;
+	}
+	.same_skill {
+	    width: 40%;
+	}
+	.same_skill_icon {
+	    width: 2%;
+	}
+	.skill_top {
+	    width: 100%;
+		padding: 0% 0%;
+	}
+	.skill_top p {
+	    margin-bottom: 5px;
+	}
+	.same_service h3 {
+	    font-size: 14px;
+	}
+	.banner_bg,.banner2_bg {
+	    background-size: contain;
+	    background-repeat: round;
+	}
+	.banner_section {
+	    height: 134px;
+	}
+	.banner_text {
+	    padding-top: 5px;
+	}
+	.banner_text_icon{
+		margin-top: 8px;
+	}
+	.vedio_bottom ul {
+	    margin-left: 45%;
+	}
+	.same_vedio {
+	    width: 100%;
+	    margin-bottom: 15%;
+	}
+	.same_vedio ul {
+	    transform: translate(198%, 265%);
+	}
+	.same_service img, .same_vedio_img2 {
+	    margin-left: 50%;
+	}
+	.social_icon ul li {
+	    width: 30px;
+	    height: 30px;
+	}
+	.same_social_icon {
+	    transform: translate(7px, 3px);
+	}
+	.baner2_section {
+	    padding-top: 20px;
+		padding-bottom: 160px;
+	    height: 25px;
+	}
+	.banner2_bottom {
+	    transform: translate(45%, 80%);
+	}
+	.same_team_member {
+	    width: 100%;
+	    margin-bottom: 15%;
+	}
+	.same_team_member_img {
+	    width: 45%;
+	    margin-left: 30%;
+	}
+	.same_service {
+	    width: 100%;
+	    margin-right: 0%;
+	    float: none;
+	    margin-bottom: 30px;
+	}
+	.same_service_top{
+		margin-left: 40%;
+	}
+	.same_service h3{
+		margin-top: 0%;
+	}
+	.same_service img, .same_vedio_img2 {
+	    margin-left: 48%;
+	}
+	.social_icon ul {
+	    margin-left: 40%;
+	}
+	.same_footer_text {
+	    width: 100%;
+	    margin-bottom: 10%;
+	}
+	.main_footer_left {
+	    width: 35%;
+	}
+	.skill_bottom ul {
+	    margin-left: 45%;
+	}
+	.footer_social_icon {
+	    margin-left: -5%;
+	}
+	.main_footer_left {
+	    width: 100%;
+	    text-align: center;
+	}
+	.main_footer_right {
+	    width: 100%;
+	    text-align: center;
+	}
+}
+/*
+=======Mobile layout:992px;==============
+*/
+@media only screen and (max-width: 479px){
+	.wrapper{
+		width: 98%;
+	}
+	.header_section {
+	    height: 239px;
+	}
+	.header_top {
+	    padding-top: 15px;
+	}
+	.header_bottom {
+	    margin-top: 4%;
+	}
+	.header_bottom button{
+		margin: 5% 31%;
+	}
+	.portfolio h2, .service_top h2, .skill_top h2, .same_vedio h2, .team_member_top h2, .same_team_member h2, .footer_top_up h2 {
+	    font-size: 12px;
+	}
+	.portfolio ul li, .service_top ul li, .team_member_top ul li, .footer_top_up ul li {
+	    display: inline;
+	    margin: 0px 0px;
+	}
+	.same_portfolio {
+	    width: 40%;
+	}
+	.skill_bg {
+	    height: 342px;
+	    width: 100%;
+	}
+	.same_portfolio_icon {
+	    width: 2%;
+	    margin: 0px 20px;
+	}
+	.skill_section {
+	    margin-left: 0%;
+	}
+	.same_skill {
+	    width: 40%;
+	}
+	.same_skill_icon {
+	    width: 2%;
+	}
+	.skill_top {
+	    width: 100%;
+		padding: 0% 0%;
+	}
+	.skill_top p {
+	    margin-bottom: 5px;
+	}
+	.same_service h3 {
+	    font-size: 14px;
+	}
+	.banner_bg,.banner2_bg {
+	    background-size: contain;
+	    background-repeat: round;
+	}
+	.banner_section {
+	    height: 89px;
+	}
+	.banner_text {
+	    padding-top: 0px;
+	}
+	.banner_text h2 {
+	    font-size: 30px;
+	}
+	.banner_text h3 {
+	    font-size: 20px;
+	}
+	.banner_text_icon{
+		margin-top: 0px;
+		width: 8%;
+	}
+
+	.vedio_bottom ul {
+	    margin-left: 45%;
+	}
+	.same_vedio {
+	    width: 100%;
+	    margin-bottom: 15%;
+	}
+	.same_vedio ul {
+	    transform: translate(198%, 265%);
+	}
+	.same_service img, .same_vedio_img2 {
+	    margin-left: 50%;
+	}
+	.social_icon ul li {
+	    width: 30px;
+	    height: 30px;
+	}
+	.same_social_icon {
+	    transform: translate(7px, 3px);
+	}
+	.baner2_section {
+	    padding-top: 0px;
+		padding-bottom: 130px;
+		height: 0px;
+	}
+	.banner2_bottom {
+	    transform: translate(45%, 15%);
+	}
+	.banner2_top img {
+	    width: 18px;
+	}
+	.banner2_top h2, .banner2_top button {
+	    font-size: 10px;
+	}
+	.input_field {
+	    padding: 2px 20px;
+	}
+	.banner2_top button {
+	    padding: 6px 15px;
+	}
+	.same_team_member {
+	    width: 100%;
+	    margin-bottom: 15%;
+	}
+	.same_team_member_img {
+	    width: 45%;
+	    margin-left: 30%;
+	}
+	.same_service {
+	    width: 100%;
+	    margin-right: 0%;
+	    float: none;
+	    margin-bottom: 30px;
+	}
+	.same_service_top{
+		margin-left: 35%;
+	}
+	.same_service h3{
+		margin-top: 0%;
+	}
+	.same_service img, .same_vedio_img2 {
+	    margin-left: 48%;
+	}
+	.social_icon ul {
+	    margin-left: 32%;
+	}
+	.same_footer_text {
+	    width: 100%;
+	    margin-bottom: 10%;
+	}
+	.main_footer_left {
+	    width: 35%;
+	}
+	.skill_bottom ul {
+	    margin-left: 39%;
+	}
+
+	.footer_social_icon {
+	    margin-left: -5%;
+	}
+	.main_footer_left {
+	    width: 100%;
+	    text-align: center;
+	}
+	.main_footer_right {
+	    width: 100%;
+	    text-align: center;
+	}
+}
